@@ -84,12 +84,14 @@ h6 {
 .header a:hover {
 	color: #fd3c3d;
 }
-.header-nav {
+.header-nav-bg {
 	padding: 25px 0;
 	background: rgba(0, 0, 0, 0.58);
+}
+.header-nav {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	align-items: center;
 }
 .logo {
 	font-size: 40px;
@@ -482,6 +484,17 @@ h6 {
 }
 /*-------- 768-992px col-md-------*/
 @media screen and (max-width: 992px) {
+	.header-nav {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.header-nav .logo {
+		margin-right: 0;
+	}
+	.header-menu__list {
+		width: 100%;
+		margin-top: 20px;
+	}
 	.logo {
 		font-size: 30px;
 	}
@@ -512,17 +525,6 @@ h6 {
 	}
 	h2 {
 		font-size: 35px;
-	}
-	.header-nav {
-		flex-direction: column;
-		justify-content: center;
-	}
-	.header-nav .logo {
-		margin-right: 0;
-	}
-	.header-menu__list {
-		width: 100%;
-		margin-top: 20px;
 	}
 	.coaches-persona__photo,
 	.coaches-persona__about {
