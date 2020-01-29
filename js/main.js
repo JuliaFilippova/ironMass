@@ -1,12 +1,3 @@
-$(document).bind( 'mousewheel', function (e) { 
-    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
-    e.preventDefault(); 
-    e.stopPropagation(); 
-    $(document.body).stop().animate( { 
-         scrollTop : nt 
-     } , 500 , 'easeInOutCubic' );  
-} )
-
 // slick-slider
 $('.about-slider').slick({
     draggable: true,
@@ -16,3 +7,17 @@ $('.about-slider').slick({
     cssEase: 'ease-in-out',
     touchThreshold: 100
 })
+
+$(function() {
+	
+	$(".scroll-panel").css({
+		"height":$(window).height()
+	});
+
+	$.scrollify({
+		section:".scroll-panel",
+	    scrollSpeed: 1100,
+	    offset : 0, // расстояние в пикселях для комппенсации положения каждого раздела.
+	    scrollbars: false //Будет ли видна полоса прокрутки
+	});
+});
