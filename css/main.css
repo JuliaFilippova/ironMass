@@ -78,6 +78,7 @@ h6 {
 /*----- header -----*/
 .header {
 	background: url('https://i.artfile.me/wallpaper/13-09-2015/2880x1800/muzhchiny---unsort-telo-muzhchina-refres-967637.jpg');
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -136,7 +137,7 @@ h6 {
 
 /*----- hamburger-menu-----*/
 .home {
-	padding: 170px 0;
+	padding: 170px 0 320px;
 }
 .home-content > p {
 	font-size: 30px;
@@ -182,11 +183,50 @@ h6 {
     left: -11px;
     transform: rotate(20deg);
 }
+
+/*.btn-order {
+	position: absolute;
+	left: 50%;
+	z-index: 111;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background: #0a0d14;
+	display: inline-block;
+	text-align: center;
+    width: 100%;
+    box-shadow: 10px 25px 15px rgba(14, 14, 14, 0.9);
+}
+.form-header {
+	justify-content: center;
+}*/
 /*----- program -----*/
 .program {
-	background: #16151a;
+	background: #17151a;
 	text-align: center;
-	padding: 20px 10px;
+	position: relative;
+}
+.program:after {
+	content: '';
+	position: absolute;
+	background: url('../img/angle.png') no-repeat center /cover;
+	background-size: 145% 90%;
+	width: 100%;
+	height: 200px;
+	bottom: -175px;
+	left: 0;
+	transform: rotate(180deg);
+	z-index: 222;
+}
+.program:before {
+	content: '';
+	position: absolute;
+	background: url('../img/angle.png') no-repeat center /cover;
+	background-size: 145% 90%;
+	width: 100%;
+	height: 200px;
+	top: -175px;
+	left: 0;
+	z-index: 222;
 }
 .program-card {
 	min-height: 500px;
@@ -236,7 +276,7 @@ h6 {
 /*----- coaches -----*/
 .coaches {
 	background: #20232a;
-	padding: 20px 0;
+	padding: 190px 0 40px;
 }
 .section-title {
 	padding: 10px 0;
@@ -382,10 +422,11 @@ h6 {
 /*----- order-----*/
 .order {
 	background: url('https://es.toluna.com/dpolls_images/2019/07/17/9846e962-ea85-4797-a6cb-91ae8e0dccca.jpg');
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 27%;
-	padding: 200px 0;
+	padding: 250px 0 100px;
 }
 .order-form {
 	max-width: 680px;

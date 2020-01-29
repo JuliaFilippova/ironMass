@@ -15,11 +15,13 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<!-- scroll animation CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header class="header scroll-panel" id="header">
+	<header class="header" id="header">
 		<div class="header-nav-bg">
 			<div class="container">
 				<nav class="header-nav">
@@ -46,7 +48,7 @@
 		</div>
 		<div class="home">
 			<div class="container">
-				<div class="home-content">
+				<div class="home-content" data-aos="fade-right">
 					<p>
 						<span>CrossFit</span> studio
 					</p>
@@ -60,8 +62,21 @@
 				</div>
 			</div>
 		</div>
+		<!-- <div class="btn-order" id="btn-order">
+			<form action="#" class="form-header form-contacts">
+				<label for="name">
+					Имя
+					<input type="text" id="name" name="name">
+				</label>
+				<label for="email">
+					Телефон
+					<input type="email" id="email" name="email">
+				</label>
+			</form>
+			<a href="#" class="form-contacts__btn">Узнать подробности</a>
+		</div> -->
 	</header>
-	<section class="program scroll-panel">
+	<section class="program">
 		<div class="container">
 			<h2 class="section-title text-center">
 				Программы тренировок
@@ -69,7 +84,7 @@
 			<div class="program-content">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6 p-0">
-						<div class="program-card program-card-first">
+						<div class="program-card program-card-first" data-aos="fade-in">
 							<h4>
 								Basic crossfit
 							</h4>
@@ -82,7 +97,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6 p-0">
-						<div class="program-card program-card-second">
+						<div class="program-card program-card-second" data-aos="fade-in">
 							<h4>
 								Fitness studio
 							</h4>
@@ -95,7 +110,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6 p-0">
-						<div class="program-card program-card-third">
+						<div class="program-card program-card-third" data-aos="fade-in">
 							<h4>
 								Yoga classes
 							</h4>
@@ -108,7 +123,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6 p-0">
-						<div class="program-card program-card-last">
+						<div class="program-card program-card-last" data-aos="fade-in">
 							<h4>
 								Personal training
 							</h4>
@@ -124,14 +139,14 @@
 			</div>
 		</div>
 	</section>
-	<section class="coaches scroll-panel" id="coaches">
+	<section class="coaches" id="coaches">
 		<div class="container">
 			<h2 class="section-title text-center">
 				Персональные тренера
 			</h2>
 			<div class="row">
 				<div class="col-md-6 p-0">
-					<div class="coaches-persona">
+					<div class="coaches-persona" data-aos="fade-right">
 						<div class="coaches-persona__photo coaches-persona__photo_first"></div>
 						<div class="coaches-persona__about">
 							<h4>
@@ -158,7 +173,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 p-0">
-					<div class="coaches-persona">
+					<div class="coaches-persona" data-aos="fade-left">
 						<div class="coaches-persona__photo coaches-persona__photo_second"></div>
 						<div class="coaches-persona__about">
 							<h4>
@@ -187,7 +202,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 p-0">
-					<div class="coaches-persona">
+					<div class="coaches-persona" data-aos="fade-right">
 						<div class="coaches-persona__photo coaches-persona__photo_thirt"></div>
 						<div class="coaches-persona__about">
 							<h4>
@@ -214,7 +229,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 p-0">
-					<div class="coaches-persona">
+					<div class="coaches-persona" data-aos="fade-left">
 						<div class="coaches-persona__photo coaches-persona__photo_last"></div>
 						<div class="coaches-persona__about">
 							<h4>
@@ -243,10 +258,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="about scroll-panel" id="about">
+	<section class="about" id="about">
 		<div class="about-slider d-flex">
 			<div class="about-slider__page about-slide_first">
-				<div class="about-text">
+				<div class="about-text" data-aos="fade-right">
 					<div class="about-text__head">
 						<h3>
 							<span>Iron</span>Mass
@@ -268,7 +283,7 @@
 				</div>
 			</div>
 			<div class="about-slider__page about-slide_second">
-				<div class="about-text">
+				<div class="about-text" data-aos="fade-right">
 					<div class="about-text__head">
 						<h3>
 							<span>Iron</span>Mass
@@ -285,7 +300,7 @@
 				</div>
 			</div>
 			<div class="about-slider__page about-slide_third">
-				<div class="about-text">
+				<div class="about-text" data-aos="fade-right">
 					<div class="about-text__head">
 						<h3>
 							<span>Iron</span>Mass
@@ -320,7 +335,7 @@
 				</div>
 			</div>
 			<div class="about-slider__page about-slide_last">
-				<div class="about-text">
+				<div class="about-text" data-aos="fade-right">
 					<div class="about-text__head">
 						<h3>
 							<span>Iron</span>Mass
@@ -396,8 +411,10 @@
 		</div>
 	</footer>
 	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/jquery.scrollify.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
+	<!-- <script src="js/jquery.scrollify.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script> -->
+	<!-- scroll animation js -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
