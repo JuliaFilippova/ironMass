@@ -1,0 +1,591 @@
+body {
+	font-family: 'Cinzel', serif;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: #fff;
+	transition: .5s;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: .5s;
+}
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+}
+h1 {
+	font-family: 'Cinzel', serif;
+	font-size: 95px;
+	color: #fff;
+	line-height: 1.1em;
+	letter-spacing: .07em;
+	font-weight: 400;
+}
+h2 {
+	font-size: 40px;
+	
+}
+h3 {
+	font-size: 37px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+.p-0 {
+	padding: 0;
+}
+.btn {
+	display: inline-block;
+	padding: 15px 30px 12px;
+	width: 230px;
+	background: #ff7907;
+	color: #fff;
+	letter-spacing: .1em;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+/*----- header -----*/
+.header {
+	background: url('https://i.artfile.me/wallpaper/13-09-2015/2880x1800/muzhchiny---unsort-telo-muzhchina-refres-967637.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header a:hover {
+	color: #fd3c3d;
+}
+.header-nav {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	font-size: 40px;
+	margin-right: 50px;
+	line-height: 0.9;
+	letter-spacing: .03em;
+	color: #fd3c3d;
+	font-weight: 700;
+}
+.logo span {
+	font-size: 45px;
+	color: #fff;
+}
+.header-menu__list {
+	margin-left: auto;
+	width: 400px;
+}
+.header-menu__adress {
+	font-size: 20px;
+}
+.header-menu__phone {
+	font-size: 23px;
+}
+.header-menu__phone span {
+	font-size: 20px;
+}
+.header-menu__request {
+	padding: 6px 20px;
+	border: 1px solid #fff;
+}
+/*----- hamburger-menu-----*/
+
+/*----- hamburger-menu-----*/
+.home {
+	padding: 170px 0;
+}
+.home-content > p {
+	font-size: 30px;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.home-content p span {
+	font-size: 35px;
+	color: #fd3c3d;
+}
+.home-title span {
+	display: block;
+	font-size: 65px;
+}
+.header-menu__item a {
+	font-size: 19px;
+	align-items: center;
+}
+.header-menu__item_phone a {
+	font-size: 24px;
+}
+.header-menu__item a span {
+	font-size: 20px;
+	margin-top: -10px;
+}
+.home-subtitle span:first-child {
+	position: relative;
+	font-size: 25px;
+	color: #fff;
+}
+.home-subtitle span:last-child {
+	font-size: 78px;
+	color: #fd3c3d;
+	margin-left: 20px;
+}
+.home-subtitle span:first-child:after {
+	content: '';
+	position: absolute;
+	width: 75px;
+	height: 3px;
+    background: #fd3c3d;
+    top: 13px;
+    left: -11px;
+    transform: rotate(20deg);
+}
+/*----- program -----*/
+.program {
+	background: #16151a;
+	text-align: center;
+	padding: 20px 10px;
+}
+.program-card {
+	min-height: 500px;
+	height: 100%;
+	padding: 50px 0;
+	padding: 30px 15px 20px;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+}
+.program-card p {
+	align-items: flex-end;
+}
+.program-card-first {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-programs-img1.jpg') no-repeat center /cover;
+}
+.program-card-second {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-programs-img2.jpg') no-repeat center /cover;
+}
+.program-card-third {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-programs-img3.jpg') no-repeat center /cover;
+}
+.program-card-last {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-programs-img4.jpg') no-repeat center /cover;
+}
+.program-card__details {
+	display: inline-block;
+	padding: 8px 25px;
+	background: transparent;
+	text-transform: uppercase;
+	border: 2px solid;
+}
+.program-card__details:hover {
+	background: #fd3c3dd6;
+	border: 2px solid #fd3c3dd6;	
+}
+.coaches-persona {
+	display: flex;
+}
+.coaches-persona__networks a {
+	font-size: 20px;
+	margin-right: 18px;
+}
+.coaches-persona__networks a:hover {
+	color: #fd3c3d;
+}
+/*----- coaches -----*/
+.coaches {
+	background: #20232a;
+	padding: 20px 0;
+}
+.section-title {
+	padding: 10px 0;
+    border-bottom: 7px solid #fd3c3d;
+    margin-bottom: 25px;
+}
+.coaches-persona {
+	min-height: 430px;
+}
+.coaches-persona__photo  {
+	width: 100%;
+}
+.coaches-persona__photo_first {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-coaches-img1.jpg') no-repeat center /cover;
+}
+.coaches-persona__photo_second {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-coaches-img2.jpg') no-repeat center /cover;
+}
+.coaches-persona__photo_thirt {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-coaches-img3.jpg') no-repeat center /cover;
+}
+.coaches-persona__photo_last {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-coaches-img4.jpg') no-repeat center /cover;
+}
+.coaches-persona__about {
+	background: #2b2e35;
+	padding: 20px;
+	max-width: 400px;
+}
+.coaches-persona__about span {
+	color: #fd3c3d;
+}
+.coaches-persona__about p {
+	margin: 30px 0;
+}
+/*----- about -----*/
+.about {
+	background: #16151a;
+	/*padding: 7px 0;*/
+}
+.about-slider {
+	min-width: 0;
+	min-height: 500px;
+}
+.about-slider__page {
+	position: relative;
+	padding: 185px 0;
+	width: 100%;
+	display: block;
+}
+.about-slide_first {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-slide-img1.jpg');
+	/*background-size: 100%;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 37% 15%;
+	min-height: 830px;
+}
+.about-slide_second {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-slide-img2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 25% 0%;
+	min-height: 830px;
+}
+.about-slide_third {
+	background: url('https://ld-wp73.template-help.com/wordpress/prod_470/v1/wp-content/uploads/2019/07/home-slide-img3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 20%;
+	min-height: 830px;
+}
+.about-slide_last {
+	background: url('https://avatars.mds.yandex.net/get-pdb/770122/5a13fcfa-c523-43aa-a577-61b381da52ce/s1200');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 25% 20%;
+	min-height: 830px;
+}
+.about-text__list {
+	margin-top: 20px;
+}
+.about-text__list li {
+	display: list-item;
+    color: #fd3c3d;
+    font-size: 19px;
+    margin-bottom: 5px;
+    letter-spacing: .03em;
+    margin-left: 20px;
+}
+.about-text {
+	margin-left: auto;
+	margin-right: 130px;
+	max-width: 450px;
+	background: rgb(98, 101, 106, 0.4);
+    padding: 60px 20px;
+    border-radius: 0 50% 0 18%;
+}
+.about-text__head h3 span {
+	color: #fd3c3d;
+	font-size: 55px;
+}
+.about-text__head > span {
+	font-size: 32px;
+}
+.about-text__text {
+	margin-top: 20px;
+}
+.about-text__text p {
+	margin-top: 10px;
+	line-height: 1.7;
+	font-size: 18px;
+}
+.slick-prev {
+	left: 20px;
+}
+.slick-next {
+	right: 10px;
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	width: 35px;
+	height: 50px;
+	background: #fd3c3d80;
+	border: 2px solid transparent;
+	z-index: 222;
+	font-size: 25px;
+	color: #fff;
+	opacity: 0;
+	transition: all .5s;
+}
+.about:hover .slick-arrow {
+	opacity: 1;
+}
+.slick-arrow:hover {
+	background: transparent;
+	border: 2px solid #fff;
+}
+.slick-arrow:focus {
+	outline: none;
+}
+/*----- order-----*/
+.order {
+	background: url('https://es.toluna.com/dpolls_images/2019/07/17/9846e962-ea85-4797-a6cb-91ae8e0dccca.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 27%;
+	padding: 200px 0;
+}
+.order-form {
+	max-width: 680px;
+	margin: auto;
+}
+.order-form span {
+	color: #fd3c3d;
+}
+.form-contacts {
+	display: flex;
+	margin-top: 35px;
+	align-items: center;
+}
+.form-contacts label {
+	font-size: 18px;
+	margin-bottom: 40px;
+	margin-right: 35px;
+}
+.form-contacts input {
+	display: inline-block;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #f7f7f7;
+	color: #fff;
+	padding: 5px 10px;
+}
+.form-contacts input:focus {
+	outline: none;
+	box-shadow: 0 10px 30px 5px rgba(250, 250, 250, 0.3);
+    border-bottom: none;
+}
+.form-contacts  i {
+	margin-left: -28px;
+	color: #d8b16e;
+}
+.form-contacts__btn {
+	text-transform: uppercase;
+	display: inline-table;
+	padding: 10px 35px;
+	border: 2px solid #fff;
+}
+.form-contacts__btn:hover {
+	border: 2px solid #fd3c3d;
+	background: #fd3c3d;
+}
+/*----- footer -----*/
+.footer {
+	background: #050507;
+	padding: 35px 0;
+}
+.footer-logo {
+	font-size: 30px;
+	margin-right: 50px;
+	line-height: 0.9;
+	letter-spacing: .03em;
+	color: #fd3c3d;
+	font-weight: 700;
+
+}
+.footer-logo span {
+	font-size: 35px;
+	color: #fff;
+}
+.footer-network {
+	text-align: center;
+}
+.footer-network__box  {
+	display: flex;
+	justify-content: center;
+}
+.footer-network__box a {
+	margin-right: 25px;
+	font-size: 19px;
+}
+.footer-network__box a:hover {
+	color: #fd3c3d;
+}
+.footer-copy {
+	color: #ccc;
+	font-size: 15px;
+}
+/*----- header -----*/
+/*----- header -----*/
+/*----- header -----*/
+/*-----------------MEDIA QUERIES-----------------*/
+/*-------- 1300-  px col-xl-------*/
+@media screen and (min-width: 1300px) {
+	.about-text {
+	    margin-right: 230px;
+	}
+}
+/*-------- 992-1200px col-lg-------*/
+@media screen and (max-width: 1200px) {
+	.header {
+		background-position: 64%;
+	}
+}
+/*-------- 768-992px col-md-------*/
+@media screen and (max-width: 992px) {
+	.logo {
+		font-size: 30px;
+	}
+	.logo span {
+		font-size: 35px;
+	}
+	.header-menu__adress {
+		display: none;
+	}
+	.coaches-persona {
+	    flex-direction: column;
+	}
+	.coaches-persona__photo {
+		min-height: 380px;
+	}
+	.coaches-persona__about {
+		min-height: 300px;
+	}
+	.about-text {
+	    max-width: 350px; 
+	    margin-right: 60px;
+	}
+}
+/*-------- 413-768px col-sm-------*/
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 56px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	.header-nav {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.header-nav .logo {
+		margin-right: 0;
+	}
+	.header-menu__list {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.coaches-persona__photo,
+	.coaches-persona__about {
+		max-width: 80%;
+	    background-position: top;
+	    margin: auto;
+	}
+	.about-text {
+	    max-width: 100%; 
+	    margin-right: 0;
+	}
+	h3 {
+		font-size: 27px;
+	}
+	.about-text__head h3 span {
+		font-size: 35px;
+	}
+	.about-text__head > span {
+		font-size: 22px;
+	}
+	.about-text__text p {
+		font-size: 16px;
+	}
+	.about-slide_first {
+		background-position: 28% 0%;
+	}
+	.about-slide_second {
+		background-position: 30% 0%;
+	}
+	.about-slide_last {
+		background-position: 45% 15%;
+	}
+	.form-contacts {
+		flex-direction: column;
+		align-items: end;
+	}
+	.footer-network {
+		text-align: unset;
+		padding: 30px 0;
+	}
+	.footer-network__box  {
+		justify-content: flex-start;
+	}
+}
+/*-------- 320-420px col-------*/
+@media screen and (max-width: 413px) {
+	h1 {
+		font-size: 43px;
+		padding: 15px 0;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.home-title span {
+		font-size: 31px;
+	}
+	.header-menu__request {
+	    padding: 4px 16px;;
+	}
+	.header-menu__phone {
+	    font-size: 19px;
+	}
+	.header-menu__phone span {
+	    font-size: 16px;
+	}
+	.home-subtitle span:last-child {
+		font-size: 60px;
+	}
+	.coaches-persona__photo,
+	.coaches-persona__about {
+		max-width: 95%;
+	}
+	.about-slide_first {
+		background-position: 25% 0%;
+	}
+}
