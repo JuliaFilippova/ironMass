@@ -6,4 +6,8 @@ $('.about-slider').slick({
     infinite: false,
     cssEase: 'ease-in-out',
     touchThreshold: 100
-  })
+})
+
+$(function() {
+	jQuery.scrollSpeed(100, 800, 'easeOutCubic');
+})
