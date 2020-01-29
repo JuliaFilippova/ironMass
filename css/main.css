@@ -116,8 +116,6 @@ h6 {
 	font-size: 20px;
 }
 .header-menu__request {
-	padding: 6px 20px;
-	border: 1px solid #fff;
 	position: relative;
 }
 .header-menu__request::before, .header-menu__request:after{
@@ -126,7 +124,7 @@ h6 {
         left: 50%;
         width: 90px;
         height: 60px;
-        border: 12px double rgba(0,0,0,0.1);
+        border: 12px double rgba(250,250,250,0.3);
         content: '';
         opacity: 0;
         transform: translateX(-50%) translateY(-50%) scale(0.2);
