@@ -149,6 +149,44 @@ h6 {
 	font-size: 20px;
 	margin-top: -10px;
 }
+.header-menu__request {
+	position: relative;
+}
+.header-menu__request::before, .header-menu__request:after{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90px;
+        height: 60px;
+        border: 12px double rgba(0,0,0,0.1);
+        border-radius: 50%;
+        content: '';
+        opacity: 0;
+        transform: translateX(-50%) translateY(-50%) scale(0.2);
+}
+
+.header-menu__request:after{
+        width: 80px;
+        height: 50px;
+        border-width: 6px;
+        transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.header-menu__request:hover:before, .header-menu__request:hover:after{
+        animation: pulsate 1.2s infinite;
+}
+
+@keyframes pulsate{
+  30%{
+        opacity: 1;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+
+        100%{
+        opacity: 0.3;
+        transform: translateX(-50%) translateY(-50%) scale(0.5);
+        }
+}
 .home-subtitle span:first-child {
 	position: relative;
 	font-size: 25px;
