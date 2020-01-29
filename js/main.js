@@ -10,9 +10,9 @@ $('.about-slider').slick({
 
 $(function() {
 	
-	$(".scroll-panel").css({
-		"height":$(window).height()
-	});
+	// $(".scroll-panel").css({
+	// 	"height":$(window).height()
+	// });
 
 	$.scrollify({
 		section:".scroll-panel",
