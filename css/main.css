@@ -75,8 +75,13 @@ h6 {
 	text-transform: uppercase;
 	text-align: center;
 }
+.section-title {
+	padding: 10px 0;
+    border-bottom: 7px solid #fd3c3d;
+    margin-bottom: 25px;
+}
 /*----- header -----*/
-.header {
+.header-home {
 	background: url('https://i.artfile.me/wallpaper/13-09-2015/2880x1800/muzhchiny---unsort-telo-muzhchina-refres-967637.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -183,29 +188,13 @@ h6 {
     left: -11px;
     transform: rotate(20deg);
 }
-
-/*.btn-order {
-	position: absolute;
-	left: 50%;
-	z-index: 111;
-	transform: translate(-50%, -50%);
-	padding: 20px;
-	background: #0a0d14;
-	display: inline-block;
-	text-align: center;
-    width: 100%;
-    box-shadow: 10px 25px 15px rgba(14, 14, 14, 0.9);
-}
-.form-header {
-	justify-content: center;
-}*/
 /*----- program -----*/
-.program {
+.program-list {
 	background: #17151a;
 	text-align: center;
 	position: relative;
 }
-.program:after {
+.program-list:after {
 	content: '';
 	position: absolute;
 	background: url('../img/angle.png') no-repeat center /cover;
@@ -217,7 +206,7 @@ h6 {
 	transform: rotate(180deg);
 	z-index: 222;
 }
-.program:before {
+.program-list:before {
 	content: '';
 	position: absolute;
 	background: url('../img/angle.png') no-repeat center /cover;
@@ -277,11 +266,6 @@ h6 {
 .coaches {
 	background: #20232a;
 	padding: 190px 0 40px;
-}
-.section-title {
-	padding: 10px 0;
-    border-bottom: 7px solid #fd3c3d;
-    margin-bottom: 25px;
 }
 .coaches-persona {
 	min-height: 430px;
@@ -493,13 +477,21 @@ h6 {
 .footer-network {
 	text-align: center;
 }
+.footer-network p {
+	font-size: 17px;
+	font-weight: 700;
+}
 .footer-network__box  {
 	display: flex;
 	justify-content: center;
 }
 .footer-network__box a {
+	margin-top: 5px;
 	margin-right: 25px;
 	font-size: 19px;
+}
+.footer-network__box a:last-child {
+	margin-right: 0;
 }
 .footer-network__box a:hover {
 	color: #fd3c3d;
@@ -508,9 +500,108 @@ h6 {
 	color: #ccc;
 	font-size: 15px;
 }
-/*----- header -----*/
-/*----- header -----*/
-/*----- header -----*/
+/*----- PROGRAM.HTML -----*/
+#header-program {
+	background: #2b2e35;
+}
+.program {
+	background: url('../img/program-bg.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 65px 0 60px;
+}
+.program-details__photo {
+	background: url('../img/program1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 55%;
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+.program-details__overlay {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 90%;
+	padding: 25px 10px;
+	background: rgba(12, 12, 14, 0.6);
+}
+.program-details__text {
+	background: rgba(12, 12, 14, 0.7);
+	padding: 40px 15px;
+	height: 100%;
+}
+.program-details__text p {
+	margin-bottom: 25px;
+}
+.program-price {
+	margin-top: 30px;
+}
+.program-details__title span {
+	color: #fd3c3d;
+	font-size: 25px;
+	letter-spacing: 0.07em;
+}
+.program-price__photo {
+	background: url('../img/program2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.program-price__list {
+	padding: 25px 10px;
+	background: #191d27;
+}
+.program-price__list li {
+	margin-bottom: 7px;
+}
+.program-price__list li span {
+	color: #fd3c3d;
+	font-size: 17px;
+	letter-spacing: 0.06em
+}
+.program-details__photo_coaches {
+	background: url('https://freedesignfile.com/upload/2017/01/Man-with-muscles-and-fitness-HD-picture-07.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.section-form {
+	background: url('../img/program3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 60px 0;
+}
+/*----- CONTACTS.HTML -----*/
+.contacts {
+	padding: 40px 0;
+}
+.contact {
+	font-size: 20px;
+	text-align: center;
+	display: block;
+}
+.section-map {
+	position: relative;
+}
+.section-map:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #2b2e3561;
+	transition: all .7s;
+}
+.section-map:hover:before {
+	opacity: 0;
+}
+.section-map iframe {
+	width: 100%;
+	height: 350px;
+	background: #2b2e3561
+}
 /*-----------------MEDIA QUERIES-----------------*/
 /*-------- 1300-  px col-xl-------*/
 @media screen and (min-width: 1300px) {
