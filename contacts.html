@@ -28,8 +28,9 @@
 					<a href="index.html" class="logo">
 						Iron<span>Mass</span>
 					</a>
-					<a href="#" class="header-menu__adress">
-						ул.Московская 1/24
+					<a href="contacts.html" class="header-menu__adress d-flex">
+						<i class="fas fa-map-marked-alt"></i>
+						Москва
 					</a>
 					<ul class="header-menu__list d-flex justify-content-between align-items-center">
 						<li class="header-menu__phone">
@@ -38,7 +39,7 @@
 							</a>
 						</li>
 						<li class="header-menu__request">
-							<a href="#">
+							<a href="#exampleModal" class="phone-popup">
 								Заказать звонок
 							</a>
 						</li>
@@ -122,7 +123,31 @@
 			</div>
 		</div>
 	</footer>
+	<div class="d-none">
+	    <div class="box-modal" id="exampleModal">
+	        <form action="#" class="form-contacts form-contacts_modal">
+				<h4>
+					Оставьте заявку!
+				</h4>
+				<p>
+					Мы обязательно свяжимся с вами!
+				</p>
+				<label for="name">
+					Введите ваше имя
+					<input type="text" id="name" name="name">
+					<i class="fas fa-user"></i>
+				</label>
+				<label for="email">
+					Введите ваш телефон
+					<input type="email" id="email" name="email">
+					<i class="fas fa-mobile-alt"></i>
+				</label>
+				<a href="#" class="form-contacts__btn">Отправить</a>
+			</form>
+	    </div>
+	</div>
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
 	<!-- scroll animation js -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/bootstrap.min.js"></script>

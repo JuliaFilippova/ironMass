@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	font-size: 16px;
 	color: #fff;
-	transition: .5s;
+	overflow-x: hidden; /*убирает скролл из-за анимации */
 }
 div, p, form, input, a, span, button {
 	box-sizing: border-box;
@@ -46,7 +46,6 @@ h1 {
 }
 h2 {
 	font-size: 40px;
-	
 }
 h3 {
 	font-size: 37px;
@@ -80,8 +79,30 @@ h6 {
     border-bottom: 7px solid #fd3c3d;
     margin-bottom: 25px;
 }
+.form-contacts_modal {
+	position: fixed;
+    flex-direction: column;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%);
+	flex-direction: column;
+	text-align: center;
+	padding: 45px 20px 40px;
+	background: #0c0a09;
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(250, 250, 250, 0.5);
+}
+.form-contacts_modal label {
+	margin-top: 30px;
+	max-width: 300px;
+	margin-right: 0 !important;
+}
+.form-contacts_modal .form-contacts__btn {
+	padding: 10px 60px;
+	display: inline-block;
+}
 /*----- header -----*/
-.header-home {
+#header-home {
 	background: url('https://i.artfile.me/wallpaper/13-09-2015/2880x1800/muzhchiny---unsort-telo-muzhchina-refres-967637.jpg');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -117,6 +138,9 @@ h6 {
 }
 .header-menu__adress {
 	font-size: 20px;
+}
+.header-menu__adress i {
+	margin-right: 10px;
 }
 .header-menu__phone {
 	font-size: 23px;
@@ -266,9 +290,10 @@ h6 {
 .coaches {
 	background: #20232a;
 	padding: 190px 0 40px;
+	/*overflow-x: hidden;*/ /*убирает скролл из-за анимации  */
 }
 .coaches-persona {
-	min-height: 430px;
+	min-height: 430px;	
 }
 .coaches-persona__photo  {
 	width: 100%;
@@ -624,6 +649,9 @@ h6 {
 	.header-nav .logo {
 		margin-right: 0;
 	}
+	.header-menu__adress {
+		margin-top: 15px;
+	}
 	.header-menu__list {
 		width: 100%;
 		margin-top: 20px;
@@ -633,9 +661,6 @@ h6 {
 	}
 	.logo span {
 		font-size: 35px;
-	}
-	.header-menu__adress {
-		display: none;
 	}
 	.coaches-persona {
 	    flex-direction: column;

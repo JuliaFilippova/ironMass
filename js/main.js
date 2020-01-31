@@ -14,6 +14,15 @@ $('.about-slider').slick({
 
 
 
+// $('#exampleModal').arcticmodal();
+
+$(function(){
+	$('.phone-popup').on('click',function() {
+	    $('#exampleModal').arcticmodal();
+	});
+});
+
+
 // $(function() {
 	
 // 	$(".scroll-panel").css({
