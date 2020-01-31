@@ -711,6 +711,9 @@ h6 {
 	h2 {
 		font-size: 30px;
 	}
+	.header {
+	    background-position: 80%;
+	}
 	.header-menu__list {
 		flex-direction: column;
 	}
